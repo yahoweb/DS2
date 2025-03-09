@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breath Capacity Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <p id="status-message">이 웹사이트는 흡연자와 비흡연자의 폐활량의 차이를 알아보는 사이트입니다. <br> This website helps to identify the difference in lung capacity between smokers and non-smokers.</p>
+</div>
+
+<div class="container" id="container">
+  <div class="main-circle"></div>
+  <div class="timer" id="timer">0:00</div>
+  <div class="curve-track">
+    <div class="curve-circle" id="curve-circle"></div>
+  </div>
+
+  <div class="button-container">
+    <button class="start-btn" id="start-btn" onclick="toggleTimer()">Start</button>
+    <button class="reset-btn" id="reset-btn" onclick="resetTimer()">Reset</button>
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
